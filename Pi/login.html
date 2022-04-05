@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Assistente Saúde</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <nav class="menu">
+        <img src="logopi.png" alt="" width="300px">
+        <div class="links">
+            <a href="">Início</a>
+            <a href="">Exames</a>
+            <a href="">Rede de Saúde</a>
+            <a href="">Dúvidas Frequentes</a>
+            </div>
+        </nav>
+
+        <div class="form">
+        <form action="index.html" name="login" onsubmit="return validar();">
+            <input type="text" name="usuario" maxlength="100" placeholder="Login"><br>
+            <input type="password" name="senha" maxlength="25" placeholder="Senha"><br>
+            <button>Entrar</button>
+            <div id="bot"></div>
+        </form>
+        </div>
+</body>
+</html>

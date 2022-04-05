@@ -1,0 +1,27 @@
+header {
+    background-color: rgb(243, 239, 233);
+}
+body {
+    text-align: center;
+}
+
+.links {
+    text-align: right;
+}
+
+<!-- CÓDIGO DOS BOTÕES-->
+header a {
+    padding-right: 20px;
+}
+
+button {
+    border-style: none;
+    
+}
+
+button a {
+    text-decoration: none;
+    color: green;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

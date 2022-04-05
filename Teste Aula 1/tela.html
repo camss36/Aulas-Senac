@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/xbjwyrrn" method="post">
+        
+        <fieldset>
+            <legend>Trabalhe Conosco</legend>
+            <h1>CADASTRE-SE</h1>
+            <label>NOME</label>
+            <input type="text" placeholder="Diga seu nome" required name="nome"><span>*</span>
+            <br><br>
+            <label>SEXO</label><span>*</span> <br>
+            <input type="radio" name="sexo" value="F">FEMININO <br>
+            <input type="radio" name="sexo" value="M">MASCULINO <br>
+            <br><br>
+            <label>ESTADO</label><span>*</span>
+                <select>
+                    <option value="vazio"></option>
+                    <option value="pr">PR</option>
+                    <option value="sc">SC</option>
+                    <option value="sp">SP</option>
+                    <option value="mg">MG</option>
+                    <option value="rs">RS</option>
+                </select>
+            <label>IDADE</label>
+            <input type="number" required name="idade"><span>*</span>
+            <br><br>
+            <label>DATA DE NASCIMENTO</label>
+            <input type="date" required name="data_nascimento"><span>*</span>
+            <br><br>
+            <label>E-MAIL</label>
+            <input type="email" required name="email"><span>*</span>
+            <br><br>
+            <label for="">SENHA</label>
+            <input type="password" required name="senha"><span>*</span>
+            <br><br>
+            <label>OBSERVAÇÃO</label>
+            <br>
+            <TEXTarea cols="50" rows="10" name="observações"></TEXTarea>
+            <br><br>
+            <label for="">Anexe sua inscrição:</label><span>*</span>
+            <input type="url" required name="anexo">
+            <br><br>
+            <input type="submit" value="Cadastrar">
+        
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>Entre em contato conosco:</p>
+        <p><a href="acesso.html" target="blank"><img src="imagens/logo facebook.png" width="4%"></a>
+        <img src="imagens/whatsapp_icon.png" ><a href=""></a></img>
+        <img src="imagens/instagram_icon.png" ><a href=""></a></img></p>
+        &copy;CopyRight- todos os direitos reservados
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+fieldset{
+    background-color: lightyellow;
+    margin-left: 500px;
+    margin-right: 300px;
+}
+
+label{
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span{
+    color: blue;
+}

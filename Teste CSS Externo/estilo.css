@@ -1,0 +1,43 @@
+/*SELETOR UNIVERSAL*/
+body{
+    margin: 0;
+}
+
+/*CÓDIGO NAV BAR */
+.links a { 
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FF5C5C;
+    padding: 20px;
+}
+
+.links{
+    float: right;
+    margin-top: 130px;
+}
+
+header{
+    background-color: #2BE05E;
+    
+}
+
+.corpo{
+    height: 600px;
+}
+
+/*RODAPÉ*/
+footer{
+    background-color:#FF5C5C;
+
+}
+.redes_sociais a{
+    padding: 10px;
+}
+
+.redes_sociais h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

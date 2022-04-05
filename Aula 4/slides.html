@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tste de slides</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <h1>Teste de animação</h1>
+    <h2>Efeito Slides</h2>
+    
+    <div class="slider">
+        <ul class="frames">
+            <li id="one" class="slide">
+                <img src="foto1.jpg" alt="foto1">
+                <nav>
+                    <a class="prev" href="#tree">&larr;</a>
+                    <a class="next" href="#two">&rarr;</a>
+                </nav>
+                <div class="description">Imagem primeira</div>
+            </li>
+            <li id="two" class="slide">
+                <img src="foto2.jpg" alt="foto2">
+                <nav>
+                    <a class="prev" href="#one">&larr;</a>
+                    <a class="next" href="#tree">&rarr;</a>
+                </nav>
+                <div class="description">Imagem segunda</div>
+            </li>
+            <li id="tree" class="slide">
+                <img src="foto3.jpg" alt="foto3">
+                <nav>
+                    <a class="prev" href="#two">&larr;</a>
+                    <a class="next" href="#one">&rarr;</a>
+                </nav>
+                <div class="description">Imagem terceira</div>
+            </li>
+            <li class="quicknav">
+                <ul>
+                    <li><a href="#one"></a></li>
+                    <li><a href="#two"></a></li>
+                    <li><a href="#tree"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

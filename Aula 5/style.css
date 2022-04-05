@@ -1,0 +1,87 @@
+body{
+    margin: 0%;
+}
+
+
+
+a:hover{
+    color: rgb(6, 6, 66);
+    background-color: rgb(189, 38, 164);
+    text-decoration: none;
+    border-radius: 10px;
+    border:solid 2px rgb(143, 30, 124);
+}
+
+a:active{
+    color: black;
+    background-color: rgb(137, 158, 189);
+    border:solid 2px rgb(102, 114, 133) ;
+}
+
+a{
+    padding: 15px;
+    color:white;
+    text-decoration: overline aqua;
+}
+
+header{
+    background-image: url(fundo.webp);
+    background-position: bottom;
+    background-repeat: unset;
+    padding: 25px;
+}
+
+
+.links{
+    line-height: 50px;
+    text-align: right;
+}
+
+.conteiner{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+main{
+    width: 25%;
+    background-color: deeppink;
+    float: left;
+    padding: 3%;
+    height: 3%;
+    text-align: center;
+    min-width: 20%;
+}
+
+aside{
+    width:35%;
+    background-color: darkmagenta;
+    padding: 3%;
+    float: right;
+    height: 3%;
+    text-align: center;
+    min-width: 20%;
+}
+
+section{
+    width: 22%;
+    background-color: darkorchid;
+    padding: 3%;
+    float: right;
+    height: 3%;
+    text-align: center;
+    min-width: 20%;
+}
+
+footer{
+    clear: both;
+    background-color: rgb(143, 162, 202);
+    padding: 30px;
+    text-align: center;
+}
+
+.border{
+    border-radius: 25px;
+}
+
