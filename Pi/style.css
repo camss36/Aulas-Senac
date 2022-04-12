@@ -34,6 +34,8 @@ body{
     width: 83%;
     border-radius: 35px;
     padding: 25px;
+    margin-bottom: -300px;
+    display: inline;
 }
 
 .options{
@@ -105,6 +107,32 @@ button:active{
     border-radius: 15px;
 }
 
+#show{
+    margin-left: 30%;
+    color: black;
+    background-color: #41ABD9;
+    border: none;
+    height: 50px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#show:active{
+    margin-left: 30%;
+    color: rgb(0, 0, 0);
+    background-color: #d4e251;
+    border: none;
+    height: 50px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
 /*CÓDIGO PARA LOGIN*/
 .form{
     text-align: center;
@@ -136,6 +164,55 @@ input:focus{
     font-size: large;
     font-weight: bolder;
 }
+
+/*CÓDIGO PARA FORMULÁRIO EXAMES*/
+.exam input{
+    background-color: #e9e772;
+    width:350px;
+    padding: 25px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.exam{
+    float: right;
+    margin-right: 300px;
+    margin-top: -400px;
+    text-align: center;
+    display: none;
+}
+
+input::placeholder{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/*CÓDIGO PARA TABLE*/
+table{
+    margin-top: -719px;
+    float: right;
+}
+
+.table tr{
+    float: right;
+    width:65% ;
+    margin-top: 25px;
+}
+.table td{
+    width: 20%;
+    text-align: center;
+}
+.table td .table tr{
+    border-color: aqua;
+}
+
+
+
+
+
 
 
 
