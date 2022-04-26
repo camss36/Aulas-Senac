@@ -38,7 +38,7 @@ btn.addEventListener('click', function() {
     }
 })
 
-/*var link = document.querySelector('#aparecer');
+var link = document.querySelector('#aparecer');
 var cadastro = document.querySelector('.desaparecer');
 
 link.addEventListener('click', function() {
@@ -47,4 +47,4 @@ link.addEventListener('click', function() {
     else {
         cadastro.style.display = 'block'
     }
-})*/
+})

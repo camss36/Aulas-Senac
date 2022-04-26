@@ -212,6 +212,7 @@ input::placeholder{
 .desaparecer{
     text-align: center;
     margin-bottom: 25px;
+    display: none;
 }
 
 .desaparecer input{
@@ -239,6 +240,11 @@ table{
 .table td{
     width: 20%;
     text-align: center;
+}
+
+/*CÓDIGO PARA INPUT SELEÇÕES*/
+.opuni option{
+    padding: 55px;
 }
 
 
