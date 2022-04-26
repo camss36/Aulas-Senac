@@ -37,3 +37,14 @@ btn.addEventListener('click', function() {
         caixa.style.display = 'block'
     }
 })
+
+/*var link = document.querySelector('#aparecer');
+var cadastro = document.querySelector('.desaparecer');
+
+link.addEventListener('click', function() {
+    if (cadastro.style.display === 'block')
+    cadastro.style.display = 'none'
+    else {
+        cadastro.style.display = 'block'
+    }
+})*/

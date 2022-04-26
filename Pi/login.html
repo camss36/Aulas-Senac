@@ -25,31 +25,45 @@
             </div>
         </nav>
 
-        <section class="box"> 
-            <h2>Bem vindo Usúario X</h4><br>
-            <p>Faça seu login, e tenha acesso a todas as abas oferecidas</p>
-        </section>
+    <section class="box"> 
+        <h2>Bem vindo Usúario X</h4><br>
+        <p>Faça seu login, e tenha acesso a todas as abas oferecidas</p>
+    </section>
 
-        <div class="form">
-        <form action="index.html" name="login" onsubmit="return validar();">
-            <input type="text" name="usuario" maxlength="100" placeholder="Login"><br>
-            <input type="password" name="senha" maxlength="25" placeholder="Senha"><br>
-            <button>Entrar</button>
-            <div id="bot"></div>
-        </form>
+    <div class="form">
+    <form action="index.html" name="login" onsubmit="validar();">
+        <input type="text" name="usuario" maxlength="100" placeholder="Login"><br>
+        <input type="password" name="senha" maxlength="25" placeholder="Senha"><br>
+        <button>Entrar</button>
+        <div id="bot"></div>
+    </form>
+    </div>
+
+    <a href="#" id="aparecer">Não é registrado? Registre-se</a>
+    <section>
+        <div class="desaparecer">
+            <form action="">
+                <input type="text" name="nome" placeholder="INSIRA SEU NOME COMPLETO" required>
+                <input type="number" name="cpf" placeholder="INSIRA SEU CPF" required>
+                <input type="email" name="email" placeholder="INSIRA SEU EMAIL" required><br>
+                <input type="date" name="data_nas" placeholder="INSIRA SUA DATA DE NASCIMENTO" required>
+                <input type="password" name="" placeholder="CRIE UMA SENHA" required> 
+            </form>
         </div>
-        <div class="footer-basic">
-            <footer>
-                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="index.html">Inicio</a></li>
-                    <li class="list-inline-item"><a href="#">Serviços</a></li>
-                    <li class="list-inline-item"><a href="#">Termos</a></li>
-                    <li class="list-inline-item"><a href="#">Politica e privacidade</a></li>
-                </ul>
-                <p class="copyright">ASSISTENTE_SAÚDE© 2022</p>
-            </footer>
-        </div>
+    </section>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+                <li class="list-inline-item"><a href="#">Serviços</a></li>
+                <li class="list-inline-item"><a href="#">Termos</a></li>
+                <li class="list-inline-item"><a href="#">Politica e privacidade</a></li>
+            </ul>
+            <p class="copyright">ASSISTENTE_SAÚDE© 2022</p>
+        </footer>
+    </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>

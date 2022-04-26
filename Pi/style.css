@@ -156,7 +156,7 @@ button:active{
 }
 
 input{
-    background-color: #4ff765;
+    background-color: #c6f3cc;
     width:350px;
     padding: 25px;
     color: white;
@@ -200,6 +200,29 @@ input::placeholder{
     text-align: center;
 }
 
+/*CÓDIGO PARA FORMULÁRIO DE LOGIN*/
+#aparecer{
+    display: block;
+    position: static;
+    margin-top: -250px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.desaparecer{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.desaparecer input{
+    margin-bottom: 15px;
+    background-color: #e9e772;
+    width:350px;
+    padding: 25px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+}
 /*CÓDIGO PARA TABLE*/
 table{
     margin-top: -719px;
