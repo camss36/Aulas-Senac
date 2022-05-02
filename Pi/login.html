@@ -42,12 +42,13 @@
     <a href="#" id="aparecer">Não é registrado? Registre-se</a>
     <section>
         <div class="desaparecer">
-            <form action="">
+            <form method="POST" action="salva.php">
                 <input type="text" name="nome" placeholder="INSIRA SEU NOME COMPLETO" required>
                 <input type="number" name="cpf" placeholder="INSIRA SEU CPF" required>
                 <input type="email" name="email" placeholder="INSIRA SEU EMAIL" required><br>
                 <input type="date" name="data_nas" placeholder="INSIRA SUA DATA DE NASCIMENTO" required>
-                <input type="password" name="" placeholder="CRIE UMA SENHA" required> 
+                <input type="password" name="senha" placeholder="CRIE UMA SENHA" required>
+                <button>Entrar</button>
             </form>
         </div>
     </section>
