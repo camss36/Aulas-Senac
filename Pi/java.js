@@ -48,3 +48,6 @@ link.addEventListener('click', function() {
         cadastro.style.display = 'block'
     }
 })
+
+
+

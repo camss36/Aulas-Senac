@@ -242,11 +242,32 @@ table{
     text-align: center;
 }
 
-/*CÓDIGO PARA INPUT SELEÇÕES*/
-.opuni select{
+/*CÓDIGO PARA INPUT SELEÇÕES UNIDADEDS DE SAÚDE*/
+.opuni h3, select{
     padding: 10px;
     font-size: 25px;
-    float: right;
+    float: left;
+    margin-left: 400px;
+}
+
+.opbairronovo{
+    display: none;
+}
+
+.opboqueirao{
+    display: none;
+}
+
+.opboavista{
+    display: none;
+}
+
+.opcajuru{
+    display: none;
+}
+
+.opcic{
+    display: none;
 }
 
 
