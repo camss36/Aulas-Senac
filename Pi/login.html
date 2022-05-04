@@ -16,7 +16,7 @@
 </head>
 <body>
     <nav class="menu">
-        <img src="img/logopi.png" alt="" width="300px">
+        <img src="img/logopi.png" alt="" width="100%">
         <div class="links">
             <a href="index.html">Início</a>
             <a href="exames.html">Exames</a>
@@ -42,12 +42,13 @@
     <a href="#" id="aparecer">Não é registrado? Registre-se</a>
     <section>
         <div class="desaparecer">
-            <form method="POST" action="salva.php">
+            <form method="POST" name="cadastro" onsubmit="return condicoes()" action="salva.php" >
                 <input type="text" name="nome" placeholder="INSIRA SEU NOME COMPLETO" required>
                 <input type="number" name="cpf" placeholder="INSIRA SEU CPF" required>
                 <input type="email" name="email" placeholder="INSIRA SEU EMAIL" required><br>
                 <input type="date" name="data_nas" placeholder="INSIRA SUA DATA DE NASCIMENTO" required>
-                <input type="password" name="senha" placeholder="CRIE UMA SENHA" required>
+                <input type="password" name="senha" placeholder="CRIE UMA SENHA" required><br>
+                <div id="cad"></div>
                 <button>Entrar</button>
             </form>
         </div>

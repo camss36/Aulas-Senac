@@ -6,13 +6,9 @@ $email=$_POST['email'];
 $data=$_POST['data_nas'];
 $senha=$_POST['senha'];
 
-$sql= "INSERT INTO testes
-(nome, cpf, email, data_nas, senha) VALUES
-('$nome', '$cpf', '$email', '$data, '$senha')";
+$sql= "INSERT INTO formlog
+(Nome, CPF, Email, Nascimento, Senha) VALUES
+('$nome', '$cpf', '$email', '$data', '$senha')";
 $query= mysqli_query($conexão, $sql);
 
 ?>
-
-<script>
-    alert
-</script>

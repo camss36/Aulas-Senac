@@ -8,7 +8,7 @@ body{
 }
 
 
-/*CÓDIFGO MENU (NAV)*/
+/*===================================================CÓDIFGO MENU (NAV)===================================================*/
 .links a{
     display: block;
     padding: 15px;
@@ -24,7 +24,6 @@ body{
 }
 
 .menu{
-    /*background-color:white ;*/
     display: inline-block;
     height: 850px;
     width: 17%;
@@ -37,7 +36,7 @@ body{
 .links{
     margin-top: 50px;
 }
-/*CÓDIGO PARA CAIXA PRINCIPAL*/
+/*===================================================CÓDIGO PARA CAIXA PRINCIPAL===================================================*/
 .box{
     background-color: #41ABD9;
     float: right;
@@ -77,7 +76,7 @@ body{
 }
 
 
-/*CÓDIGO PARA BOTÃO*/
+/*===================================================CÓDIGO PARA BOTÃO===================================================*/
 .tela_login{
     color: #FFF;
     background-color: rgb(255, 196, 0);
@@ -144,11 +143,12 @@ button:active{
     border-radius: 15px;
 }
 
-/*CÓDIGO PARA LOGIN*/
+/*===================================================CÓDIGO PARA LOGIN===================================================*/
 .form{
     text-align: center;
     margin-top: -500px;
     margin-bottom: 300px;
+    margin-left: 300px;
 }
 
 .form input{
@@ -175,7 +175,7 @@ input:focus{
     font-weight: bolder;
 }
 
-/*CÓDIGO PARA FORMULÁRIO EXAMES*/
+/*===================================================CÓDIGO PARA FORMULÁRIO EXAMES===================================================*/
 .exam input{
     background-color: #e9e772;
     width:350px;
@@ -200,19 +200,20 @@ input::placeholder{
     text-align: center;
 }
 
-/*CÓDIGO PARA FORMULÁRIO DE LOGIN*/
+/*=========================================CÓDIGO PARA FORMULÁRIO DE LOGIN================================================*/
 #aparecer{
     display: block;
     position: static;
     margin-top: -250px;
     text-align: center;
     margin-bottom: 25px;
+    margin-left: 300px;
 }
 
 .desaparecer{
     text-align: center;
     margin-bottom: 25px;
-
+    margin-left: 300px ;
 }
 
 .desaparecer input{
@@ -224,7 +225,7 @@ input::placeholder{
     border: none;
     border-radius: 10px;
 }
-/*CÓDIGO PARA TABLE*/
+/*===============================================CÓDIGO PARA TABLE===================================================*/
 table{
     margin-top: -719px;
     float: left;
@@ -242,7 +243,7 @@ table{
     text-align: center;
 }
 
-/*CÓDIGO PARA INPUT SELEÇÕES UNIDADEDS DE SAÚDE*/
+/*========================================CÓDIGO PARA INPUT SELEÇÕES UNIDADEDS DE SAÚDE=============================================*/
 .opuni h3, select{
     padding: 10px;
     font-size: 25px;
@@ -268,6 +269,70 @@ table{
 
 .opcic{
     display: none;
+}
+
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+  /* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+  /* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+  /* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+  /* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+  /* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: rgb(233, 76, 76);
+}
+
+  /* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
 }
 
 

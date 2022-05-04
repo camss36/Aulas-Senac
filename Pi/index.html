@@ -36,10 +36,29 @@
             <div class="options"><a href="exames.html"><br><img src="img/exame.png" width="35%" alt=""><h1>Exames</h1></a></div>
             <div class="options"><a href="unidades.html"><img src="img/hospital.png" width="35%" alt=""><h1>Unidades de saúde mais indicadas</h1></a></div>
             <div class="options"><a href="" target="blank"><br><img src="img/jornal.png" width="35%" alt=""><h1>Notícias</h1></a></div>
-            <div class="options"><a href="" target="blank"><br><img src="img/tel.png" width="35%" alt=""><h1>Fale conosco</h1></a></div>
+            <div class="options"><a href="#" onclick="openForm();" ><br><img src="img/tel.png" width="35%" alt=""><h1>Fale conosco</h1></a>
+            
+            </div>
         </main>
     </section>
+    
+    <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Chat online</h1>
 
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Insira seu E-mail" name="email" required>
+
+        <label for="mens"><b>Insira sua mensagem</b></label>
+        <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Escreva algo"></textarea>
+
+
+        <button type="submit" class="btn">Enviar</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+    </form>
+    </div>
+    <!--<p>Click on the button at the bottom of this page to open the login form.</p>
+    <p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>-->
     <div class="log"><a href="login.html"><button class="tela_login">Faça seu Login</button></a></div>
     
     <br>
