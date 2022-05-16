@@ -51,42 +51,15 @@ function condicoes(){
 }
 
 
-
-/*VALIDAR PÁG EXAMES
-function vazios(){
-    if (document.exames.exame.value == "") {
-        
-    }
-}*/
-
 /*==================================BTN EXPANDIR E RETRAIR==============================*/
-var btn = document.querySelector('#show');
-var caixa = document.querySelector('.exam');
-
-btn.addEventListener('click', function() {
-    if (caixa.style.display === 'block')
-    caixa.style.display = 'none'
-    else {
-        caixa.style.display = 'block'
-    }
-})
-
 var link = document.querySelector('#aparecer');
 var cadastro = document.querySelector('.desaparecer');
 
 link.addEventListener('click', function() {
     if (cadastro.style.display === 'block')
-    cadastro.style.display = 'none'
+        cadastro.style.display = 'none'
     else {
         cadastro.style.display = 'block'
     }
 })
 
-
-
-function openForm(){   
-    document.getElementById("myForm").style.display = "block";
-}
-function closeForm() {
-document.getElementById("myForm").style.display = "none";
-}

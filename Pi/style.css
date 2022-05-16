@@ -211,6 +211,7 @@ input::placeholder{
 }
 
 .desaparecer{
+    display: none;
     text-align: center;
     margin-bottom: 25px;
     margin-left: 300px ;
@@ -270,10 +271,6 @@ table{
 .opcic{
     display: none;
 }
-
-
-
-
 
 /* The popup form - hidden by default */
 .form-popup {
