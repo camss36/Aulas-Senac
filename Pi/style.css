@@ -31,6 +31,7 @@ body{
     border-color: rgba(119, 122, 252, 0.39);
     border-width: 1px;
     margin-top: 30px;
+    box-sizing:border-box ;
 }
 
 .links{
@@ -46,6 +47,7 @@ body{
     margin-bottom: -300px;
     display: inline;
     color: whitesmoke;
+    box-sizing: border-box;
 }
 
 .options{
