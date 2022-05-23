@@ -5,7 +5,7 @@ body{
     background-position: right;
     background-repeat: no-repeat;
     background-size: 83%;
-}
+} 
 
 
 /*===================================================CÓDIFGO MENU (NAV)===================================================*/
@@ -92,7 +92,7 @@ body{
 }
 
 .log{
-    margin-left: 800px;
+    margin-left: 900px;
 }
 
 button{
@@ -334,6 +334,16 @@ table{
     opacity: 1;
 }
 
+
+/*========================================CÓDIGO PARA TERMOS DE USO E RESPONSABILIDADE=============================================*/
+.textinho {
+    float: right;
+    width: 83%;
+    padding: 80px;
+    margin-bottom: -300px;
+    display: inline;
+    
+}
 
 
 
