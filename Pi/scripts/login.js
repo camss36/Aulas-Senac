@@ -25,28 +25,23 @@ function condicoes(){
     if (document.cadastro.nome.value. lenght <5) {
         cadastro.innerHTML= `Porfavor insira nome completo`
     }
-    if (document.cadastro.nome.value) {
-        cadastro.innerHTML= `Box vermelha caso vazio`
+    if (document.cadastro.nome.value == "") {
+        cadastro.innerHTML= `Nome não pode estar vazio`
     }
 
     if (document.cadastro.cpf.value. lenght <11) {
         cadastro.innerHTML= `CPF incorreto`
     }
-    if (document.cadastro.cpf.value) {
-        cadastro.innerHTML= `CPF não pode vazio box vermelha`
+    if (document.cadastro.cpf.value == "") {
+        cadastro.innerHTML= `CPF não pode estar vazio`
     }
 
     if (document.cadastro.email.value.indexOf('.com') == -1) {
         cadastro.innerHTML= `E-mail incorreto`
     }
-    if (document.cadastro.email.value) {
-        cadastro.innerHTML= `E-mail vazio box vermelha`
+    if (document.cadastro.email.value == "") {
+        cadastro.innerHTML= `E-mail não pode estar vazio`
     }
-
-    if (document.cadastro.data_nas.value) {
-        cadastro.innerHTML= `data vazia box vermelha`
-    }
-
 
 }
 
