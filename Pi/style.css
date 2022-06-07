@@ -157,7 +157,7 @@ button:active{
     margin: 15px;
 }
 
-input{
+.desaparecer input{
     background-color: #c6f3cc;
     width:350px;
     padding: 25px;
@@ -247,31 +247,10 @@ table{
 }
 
 /*========================================CÓDIGO PARA INPUT SELEÇÕES UNIDADEDS DE SAÚDE=============================================*/
-.opuni h3, select{
-    padding: 10px;
-    font-size: 25px;
-    float: left;
-    margin-left: 400px;
-}
-
-.opbairronovo{
-    display: none;
-}
-
-.opboqueirao{
-    display: none;
-}
-
-.opboavista{
-    display: none;
-}
-
-.opcajuru{
-    display: none;
-}
-
-.opcic{
-    display: none;
+iframe{
+    margin-left: 33%;
+    margin-bottom: 15%;
+    margin-top: 10%;
 }
 
 /* The popup form - hidden by default */
@@ -341,7 +320,6 @@ table{
     width: 83%;
     padding: 80px;
     margin-bottom: -300px;
-    display: inline;
 }
 
 .textinho p{
@@ -357,6 +335,12 @@ table{
 .textinho h3 {
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#back{
+    background-color: #41abd983;
+    padding: 3%;
+    border-radius: 25px;
 }
 
 
