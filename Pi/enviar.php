@@ -9,11 +9,11 @@ $arquivo=$_POST['pdfexam'];
 $sql= "INSERT INTO cadexames
 (Nomeexame, Numexame, Datareal, Observacao, Fila) VALUES
 ('$nomeexam', '$nuexam', '$dataexame', '$obser', '$pdfexam')";
-$query= mysqli_query($conexão, $sql);
-if (!$query) {
-    echo "falha".mysqli_connect_error();
-}
+$resultado= $conexão->query($sql) or die ($conexão->error);
 
+if ($resultado) {
+    echo 'sucesso';
+}
 ?>
 
 <script>

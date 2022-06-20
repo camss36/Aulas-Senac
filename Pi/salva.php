@@ -9,9 +9,10 @@ $senha=$_POST['senha'];
 $sql= "INSERT INTO formlog
 (Nome, CPF, Email, Nascimento, Senha) VALUES
 ('$nome', '$cpf', '$email', '$data', '$senha')";
-$query= mysqli_query($conexão, $sql);
-if (!$query) {
-    echo "falha".mysqli_connect_error()
+$resultado= $conexão->query($sql) or die ($conexão->error);
+
+if ($resultado) {
+    echo 'sucesso';
 }
 ?>
 
