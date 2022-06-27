@@ -1,9 +1,9 @@
 <?php
 
-$servidor="sql108.byetcluster.com";
-$usuario="sql108.epizy.com";
-$senha="eVQmB4YkOdj";
-$database="epiz_31956943_ProjetoIntegrador";
+$servidor= "localhost";
+$usuario= "root";
+$senha= "";
+$database= "pi";
 
 $conexão=mysqli_connect($servidor, $usuario, $senha, $database);
 

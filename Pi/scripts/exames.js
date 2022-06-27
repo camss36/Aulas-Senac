@@ -1,5 +1,5 @@
-var btn = document.querySelector('#show');
-var caixa = document.querySelector('.exam');
+var btn = document.getElementById('show');
+var caixa = document.getElementById('exam');
 
 btn.addEventListener('click', function() {
     if (caixa.style.display === 'block')
@@ -8,3 +8,4 @@ btn.addEventListener('click', function() {
         caixa.style.display = 'block'
     }
 })
+

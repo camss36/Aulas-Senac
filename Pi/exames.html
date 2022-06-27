@@ -45,12 +45,12 @@
 
     <section class="exam">
         <h1>Cadastre seus exames aqui</h1><br>
-        <form action="enviar.php" name="exames" onsubmit="vazios();">
+        <form action="enviar.php" name="exames" onsubmit="vazios();" method="post">
             <input type="text" name="exame" placeholder="Nome do exame realizado" required>
             <input type="number" name="n_exame" placeholder="Insira o número do exame" required>
             <input type="date" name="dataexam" required><br>
             <input type="text" name="obs" placeholder="Possui alguma observação?">
-            <input type="text" name="arquivo" required><br>
+            <input type="file" name="arquivo" required><br>
             <button>Enviar</button>
         </form>
     </section>

@@ -47,8 +47,8 @@ function condicoes(){
 
 
 /*==================================BTN EXPANDIR E RETRAIR==============================*/
-var link = document.querySelector('#aparecer');
-var cadastro = document.querySelector('.desaparecer');
+var link = document.getElementById('aparecer');
+var cadastro = document.getElementById('esconde');
 
 link.addEventListener('click', function() {
     if (cadastro.style.display === 'block')

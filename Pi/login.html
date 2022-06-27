@@ -32,7 +32,7 @@
     </section>
 
     <div class="form">
-    <form action="salva.php" name="login" onsubmit="return validar();">
+    <form action="salva.php" name="login" onsubmit="return validar();" method="post">
         <input type="text" name="usuario" maxlength="100" placeholder="Login"><br>
         <input type="password" name="senha" maxlength="25" placeholder="Senha"><br>
         <button>Entrar</button>
@@ -42,7 +42,7 @@
 
     <a href="#" id="aparecer">Não é registrado? Registre-se</a>
     <section>
-        <div class="desaparecer">
+        <div class="desaparecer" id="esconde">
             <form method="POST" name="cadastro" onsubmit="return condicoes()" action="salva.php" >
                 <input type="text" name="nome" placeholder="INSIRA SEU NOME COMPLETO" required>
                 <input type="number" name="cpf" placeholder="INSIRA SEU CPF" required>
