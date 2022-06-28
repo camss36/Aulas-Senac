@@ -120,7 +120,6 @@ button:active{
 }
 
 #show{
-    margin-left: 30%;
     color: black;
     background-color: #41ABD9;
     border: none;
@@ -133,7 +132,7 @@ button:active{
 }
 
 #show:active{
-    margin-left: 30%;
+
     color: rgb(0, 0, 0);
     background-color: #d4e251;
     border: none;
@@ -194,7 +193,10 @@ input:focus{
     margin-right: 300px;
     margin-top: -400px;
     text-align: center;
+}
 
+#formExam {
+    display: none;
 }
 
 input::placeholder{
@@ -229,21 +231,13 @@ input::placeholder{
     border-radius: 10px;
 }
 /*===============================================CÓDIGO PARA TABLE===================================================*/
-table{
-    margin-top: -719px;
-    float: left;
-    margin-right: 100px;
-}
-
-.table tr{
+.tabela{
     float: right;
-    width:65% ;
-    margin-top: 25px;
-    
-}
-.table td{
-    width: 20%;
-    text-align: center;
+    margin-right: 27%;
+    margin-top: 10%;
+    font-size: 23px;
+    width: 40%;
+    border: 1px solid black;
 }
 
 /*========================================CÓDIGO PARA INPUT SELEÇÕES UNIDADEDS DE SAÚDE=============================================*/
