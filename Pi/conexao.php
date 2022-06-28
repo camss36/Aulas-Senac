@@ -5,9 +5,9 @@ $usuario= "root";
 $senha= "";
 $database= "pi";
 
-$conexão=mysqli_connect($servidor, $usuario, $senha, $database);
+$conexao=mysqli_connect($servidor, $usuario, $senha, $database);
 
-if($conexão){
+if($conexao){
     echo 'Conectado com sucesso!';
 
 }else{

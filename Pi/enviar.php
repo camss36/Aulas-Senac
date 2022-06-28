@@ -1,15 +1,15 @@
 <?php
 include('conexao.php');
-$exame=$_POST['nomeexam'];
-$n_exame=$_POST['nuexam'];
-$dataexam=$_POST['dataexame'];
-$obs=$_POST['obser'];
-$arquivo=$_POST['pdfexam'];
+$exame=$_POST['exame'];
+$n_exame=$_POST['n_exame'];
+$dataexam=$_POST['dataexam'];
+$obs=$_POST['obs'];
+$arquivo=$_POST['arquivo'];
 
 $sql= "INSERT INTO cadexames
 (Nomeexame, Numexame, Datareal, Observacao, Fila) VALUES
-('$nomeexam', '$nuexam', '$dataexame', '$obser', '$pdfexam')";
-$resultado= $conexão->query($sql) or die ($conexão->error);
+('$exame', '$n_exame', '$dataexam', '$obs', '$arquivo')";
+$resultado= $conexao->query($sql) or die ($conexao->error);
 
 if ($resultado) {
     echo 'sucesso';
