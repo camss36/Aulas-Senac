@@ -3,7 +3,7 @@
 function enviarArquivo($error, $size, $name, $tmp_name) {
 
     if($error)
-        die("Falha ao enviar arquivo, selecione uma foto");
+        die("Falha ao enviar arquivo, selecione uma PDF");
 
     if($size > 2097152)
     //1 kb = 1024 bytes

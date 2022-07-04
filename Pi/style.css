@@ -95,7 +95,19 @@ body{
     margin-left: 900px;
 }
 
-button{
+#envi{
+    color: #FFF;
+    background-color: rgb(23, 105, 23);
+    border: none;
+    height: 50px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#enviar{
     color: #FFF;
     background-color: black;
     border: none;
@@ -105,6 +117,18 @@ button{
     font-weight: bold;
     cursor: pointer;
     border-radius: 25px;
+}
+
+#close{
+    color: #FFF;
+    background-color: rgb(255, 2, 2);
+    border: none;
+    height: 50px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px
 }
 
 button:active{
@@ -121,7 +145,7 @@ button:active{
 
 #show{
     color: black;
-    background-color: #41ABD9;
+    background-color: #7ed941;
     border: none;
     height: 50px;
     line-height: 30px;
@@ -129,6 +153,7 @@ button:active{
     font-weight: bold;
     cursor: pointer;
     border-radius: 15px;
+
 }
 
 #show:active{
@@ -154,15 +179,14 @@ button:active{
 
 .form input{
     margin: 15px;
-}
-
-.desaparecer input{
-    background-color: #c6f3cc;
-    width:350px;
+    background-color: #41ABD9;
+    width:250px;
     padding: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 10px;
+    margin-left: 25px;
+    margin-bottom: 15px;
 }
 
 input:focus{
@@ -178,7 +202,7 @@ input:focus{
 
 /*===================================================CÓDIGO PARA FORMULÁRIO EXAMES===================================================*/
 .exam input{
-    background-color: #c6f3cc;
+    background-color: #d0eee5;
     width:350px;
     padding: 25px;
     color: rgb(0, 0, 0);
@@ -190,19 +214,20 @@ input:focus{
 
 .exam{
     float: right;
-    margin-right: 300px;
+    margin-right: 10%;
     margin-top: -400px;
     text-align: center;
-}
-
-#formExam {
     display: none;
 }
+
 
 input::placeholder{
     color: rgb(0, 0, 0);
     text-align: center;
+    font-size: large;
+    font-weight: lighter;
 }
+
 
 /*=========================================CÓDIGO PARA FORMULÁRIO DE LOGIN================================================*/
 #aparecer{
@@ -212,18 +237,22 @@ input::placeholder{
     text-align: center;
     margin-bottom: 25px;
     margin-left: 300px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bolder;
+    color: black;
 }
 
 .desaparecer{
-
     text-align: center;
     margin-bottom: 25px;
     margin-left: 300px ;
+    display: none;
 }
 
 .desaparecer input{
     margin-bottom: 15px;
-    background-color: #aafcb5;
+    background-color: #d0eee5;
     width:350px;
     padding: 25px;
     color: rgb(0, 0, 0);
@@ -234,12 +263,28 @@ input::placeholder{
 .tabela{
     float: right;
     margin-right: 27%;
-    margin-top: 10%;
+    margin-top: 15%;
     font-size: 23px;
     width: 40%;
     border: 1px solid black;
+    margin-bottom: 20%;
+    border-radius: 15px;
 }
+ .tableprincipal th{
+    margin-left: 25px;
+    padding: 15px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(107, 107, 107, 0.692);
+ }
 
+ .tableprincipal td{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: blue;
+ }
 /*========================================CÓDIGO PARA INPUT SELEÇÕES UNIDADEDS DE SAÚDE=============================================*/
 iframe{
     margin-left: 33%;

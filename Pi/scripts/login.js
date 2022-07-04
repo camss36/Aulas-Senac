@@ -47,14 +47,11 @@ function condicoes(){
 
 
 /*==================================BTN EXPANDIR E RETRAIR==============================*/
-var link = document.getElementById('aparecer');
-var cadastro = document.getElementById('esconde');
+function openFormlog(){   
+    document.getElementById("esconde").style.display = "block";
+  }
 
-link.addEventListener('click', function() {
-    if (cadastro.style.display === 'block')
-        cadastro.style.display = 'none'
-    else {
-        cadastro.style.display = 'block'
-    }
-})
+function closeFormlog() {
+  document.getElementById("esconde").style.display = "none";
+  }
 

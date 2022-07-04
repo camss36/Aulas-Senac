@@ -1,6 +1,6 @@
-var btn = document.getElementById('show');
-var form = document.getElementById('formExam');
-
-btn.addEventListener('click', function() {
-  form.style.display = 'block';
-});
+function openFormexam(){   
+  document.getElementById("formexam").style.display = "block";
+}
+function closeFormexam() {
+document.getElementById("formexam").style.display = "none";
+}

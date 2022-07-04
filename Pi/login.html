@@ -20,9 +20,9 @@
         <img src="img/logopi.png" alt="" width="100%">
         <div class="links">
             <a href="index.html">Início</a>
-            <a href="exames.html">Exames</a>
+            <a href="exames.php">Exames</a>
             <a href="unidades.html">Rede de Saúde</a>
-            <a href="duvidas.html">Dúvidas Frequentes</a>
+
             </div>
         </nav>
 
@@ -35,13 +35,13 @@
     <form action="salva.php" name="login" onsubmit="return validar();" method="post">
         <input type="text" name="usuario" maxlength="100" placeholder="Login"><br>
         <input type="password" name="senha" maxlength="25" placeholder="Senha"><br>
-        <button>Entrar</button>
+        <button type="" id="enviar">Entrar</button>
         <div id="bot"></div>
     </form>
     </div>
 
-    <a href="#" id="aparecer">Não é registrado? Registre-se</a>
-    <section>
+    <a href="#" id="aparecer" onclick="openFormlog()">Não é registrado? Registre-se</a>
+
         <div class="desaparecer" id="esconde">
             <form method="POST" name="cadastro" onsubmit="return condicoes()" action="salva.php" >
                 <input type="text" name="nome" placeholder="INSIRA SEU NOME COMPLETO" required>
@@ -50,10 +50,11 @@
                 <input type="date" name="data_nas" placeholder="INSIRA SUA DATA DE NASCIMENTO" required>
                 <input type="password" name="senha" placeholder="CRIE UMA SENHA" required><br>
                 <div id="cad"></div>
-                <button>Cadastrar</button>
+                <button type="submit" id="enviar">Cadastrar</button>
+                <button type="button" id="close" onclick="closeFormlog()">Fechar</button>
             </form>
         </div>
-    </section>
+
 
     <div class="footer-basic">
         <footer>

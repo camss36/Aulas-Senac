@@ -18,5 +18,5 @@ if ($resultado) {
 
 <script>
     alert("Exame salvo com sucesso!")
-    window.location.href = "exames.html"
+    window.location.href = "exames.php"
 </script>
