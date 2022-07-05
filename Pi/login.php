@@ -1,3 +1,34 @@
+<?php
+
+if(isset($_POST['usuario']) && isset($_POST['senha']) || isset($_POST['cpf'])) {
+    
+    include('conexao.php');
+
+    $email = $mysqli->escape_string($_POST['usuario']);
+    $senha = $_POST['senha'];
+
+    $sql_code = "SELECT * FROM clientes WHERE email = '$email'";
+    $sql_query = $mysqli->query($sql_code) or die($mysqli->error);
+
+    if($sql_query->num_rows == 0) {
+        echo "O usuario informado é incorreto";
+    } else {
+        $usuario = $sql_query->fetch_assoc();
+        if(!password_verify($senha, $usuario['senha'])) {
+            echo "A senha informada está incorreta";
+        } else {
+            if(!isset($_SESSION))
+                session_start();
+            $_SESSION['usuario'] = $usuario['nome'];
+            $_SESSION['admin'] = $usuario['admin'];
+            header("Location: index.html");
+        }
+    }
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
