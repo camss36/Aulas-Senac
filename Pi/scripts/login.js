@@ -10,15 +10,6 @@ function validar(){
         return false
     }
 
-    if (document.login.usuario.value.indexOf('Teste') == -1) {
-        bot.innerHTML= `Login incorreto`
-        return false
-    }
-
-    if (document.login.usuario.value.indexOf('abcde')== -1) {
-        bot.innerHTML= `Senha Incorreta`
-        return false
-    }
 }
 
 function condicoes(){

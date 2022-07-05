@@ -1,27 +1,25 @@
 <?php
 
-if(isset($_POST['usuario']) && isset($_POST['senha']) || isset($_POST['cpf'])) {
+if(isset($_POST['usuario']) && isset($_POST['senha'])) {
     
     include('conexao.php');
 
-    $email = $mysqli->escape_string($_POST['usuario']);
+    $email = $conexao->escape_string($_POST['usuario']);
     $senha = $_POST['senha'];
 
-    $sql_code = "SELECT * FROM clientes WHERE email = '$email'";
-    $sql_query = $mysqli->query($sql_code) or die($mysqli->error);
+    $sql_code = "SELECT * FROM formlog WHERE Email = '$email' and Senha = '$senha'";
+    $sql_query = $conexao->query($sql_code) or die($conexao->error);
 
     if($sql_query->num_rows == 0) {
         echo "O usuario informado é incorreto";
     } else {
         $usuario = $sql_query->fetch_assoc();
-        if(!password_verify($senha, $usuario['senha'])) {
+        if(password_verify($senha, $usuario['senha'])) {
             echo "A senha informada está incorreta";
         } else {
             if(!isset($_SESSION))
                 session_start();
-            $_SESSION['usuario'] = $usuario['nome'];
-            $_SESSION['admin'] = $usuario['admin'];
-            header("Location: index.html");
+            header("Location: index.php");
         }
     }
 
@@ -44,13 +42,13 @@ if(isset($_POST['usuario']) && isset($_POST['senha']) || isset($_POST['cpf'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <script src="scripts/login.js"></script>
+    <!-- <script src="scripts/login.js"></script> -->
 </head>
 <body>
     <nav class="menu">
         <img src="img/logopi.png" alt="" width="100%">
         <div class="links">
-            <a href="index.html">Início</a>
+            <a href="index.php">Início</a>
             <a href="exames.php">Exames</a>
             <a href="unidades.html">Rede de Saúde</a>
 
@@ -58,12 +56,11 @@ if(isset($_POST['usuario']) && isset($_POST['senha']) || isset($_POST['cpf'])) {
         </nav>
 
     <section class="box"> 
-        <h2>Bem vindo Usúario X</h4><br>
-        <p>Faça seu login, e tenha acesso a todas as abas oferecidas</p>
+        <h2>Faça seu login, e tenha acesso a todas as abas oferecidas</h4><br>
     </section>
 
     <div class="form">
-    <form action="salva.php" name="login" onsubmit="return validar();" method="post">
+    <form name="login" onsubmit="return validar();" method="post">
         <input type="text" name="usuario" maxlength="100" placeholder="Login"><br>
         <input type="password" name="senha" maxlength="25" placeholder="Senha"><br>
         <button type="" id="enviar">Entrar</button>

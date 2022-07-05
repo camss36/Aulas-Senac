@@ -36,7 +36,7 @@ $num_clientes= $query->num_rows;
     <nav class="menu">
         <img src="img/logopi.png" alt="" width="100%">
         <div class="links">
-            <a href="index.html">Início</a>
+            <a href="index.php">Início</a>
             <a href="exames.php">Exames</a>
             <a href="unidades.html">Rede de Saúde</a>
 

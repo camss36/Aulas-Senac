@@ -9,7 +9,7 @@ $senha=$_POST['senha'];
 $sql= "INSERT INTO formlog
 (Nome, CPF, Email, Nascimento, Senha) VALUES
 ('$nome', '$cpf', '$email', '$data', '$senha')";
-$resultado= $conexão->query($sql) or die ($conexão->error);
+$resultado= $conexao->query($sql) or die ($conexao->error);
 
 if ($resultado) {
     echo 'sucesso';
