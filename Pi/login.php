@@ -19,6 +19,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
         } else {
             if(!isset($_SESSION))
                 session_start();
+                $_SESSION['usuario'] = $usuario['Nome'];
             header("Location: index.php");
         }
     }
@@ -42,7 +43,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- <script src="scripts/login.js"></script> -->
+    <script src="scripts/login.js"></script>
 </head>
 <body>
     <nav class="menu">
@@ -50,7 +51,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
         <div class="links">
             <a href="index.php">Início</a>
             <a href="exames.php">Exames</a>
-            <a href="unidades.html">Rede de Saúde</a>
+            <a href="unidades.php">Rede de Saúde</a>
 
             </div>
         </nav>
@@ -60,7 +61,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
     </section>
 
     <div class="form">
-    <form name="login" onsubmit="return validar();" method="post">
+    <form name="login" onsubmit="return validar();" method="post" autocomplete="off">
         <input type="text" name="usuario" maxlength="100" placeholder="Login"><br>
         <input type="password" name="senha" maxlength="25" placeholder="Senha"><br>
         <button type="" id="enviar">Entrar</button>
@@ -71,12 +72,12 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
     <a href="#" id="aparecer" onclick="openFormlog()">Não é registrado? Registre-se</a>
 
         <div class="desaparecer" id="esconde">
-            <form method="POST" name="cadastro" onsubmit="return condicoes()" action="salva.php" >
-                <input type="text" name="nome" placeholder="INSIRA SEU NOME COMPLETO" required>
-                <input type="number" name="cpf" placeholder="INSIRA SEU CPF" required>
-                <input type="email" name="email" placeholder="INSIRA SEU EMAIL" required><br>
-                <input type="date" name="data_nas" placeholder="INSIRA SUA DATA DE NASCIMENTO" required>
-                <input type="password" name="senha" placeholder="CRIE UMA SENHA" required><br>
+            <form method="POST" name="cadastro" onsubmit="return condicoes()" action="salva.php" autocomplete="off">
+                <input type="text" name="nome" placeholder="Insira seu nome completo" required>
+                <input type="number" name="cpf" placeholder="Insira seu CPF somente os números" required>
+                <input type="email" name="email" placeholder="Inaira seu E-mail" required><br>
+                <input type="date" name="data_nas" required>
+                <input type="password" name="senha" placeholder="Crie uma senha" required><br>
                 <div id="cad"></div>
                 <button type="submit" id="enviar">Cadastrar</button>
                 <button type="button" id="close" onclick="closeFormlog()">Fechar</button>
@@ -88,7 +89,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {
         <footer>
             <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+                <li class="list-inline-item"><a href="index.php">Inicio</a></li>
                 <li class="list-inline-item"><a href="termos.html">Termos</a></li>
             </ul>
             <p class="copyright">ASSISTENTE_SAÚDE© 2022</p>

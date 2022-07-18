@@ -3,17 +3,18 @@ include('conexao.php');
 if(!isset($_SESSION))
 session_start();
 
-/* if(!isset($_SESSION['usuario'])) {
-    header("Location: index.php");
-    die();
-}
- */
-/* $id = $_SESSION['usuario']; */
 $sql= "SELECT * FROM cadexames";
 $query= $conexao->query($sql) or die ($conexao->error);
 $num_clientes= $query->num_rows;
 
+$user = $_SESSION['usuario'];
+$sql1= "SELECT * FROM formlog";
+$query1= $conexao->query($sql1) or die ($conexao->error);
+$num_clientes1= $query1->num_rows;
+
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,13 +39,13 @@ $num_clientes= $query->num_rows;
         <div class="links">
             <a href="index.php">Início</a>
             <a href="exames.php">Exames</a>
-            <a href="unidades.html">Rede de Saúde</a>
+            <a href="unidades.php">Rede de Saúde</a>
 
         </div>
     </nav>
 
     <section class="box"> 
-        <h2>Bem vindo Usúario X</h4><br>
+        <h2>Bem vindo  <?php echo $user;?></h4><br>
         <p>Cadastre seus exames, consulte sempre que precisar</p>
         <button type="button" id="show" onclick="openFormexam()">Cadastre seu exame aqui</button>
     </section>
@@ -84,7 +85,7 @@ $num_clientes= $query->num_rows;
     
     <section class="exam" id="formexam">
         <h1>Cadastre seus exames aqui</h1><br>
-        <form action="enviar.php" name="exames" onsubmit="vazios();" method="post">
+        <form action="enviar.php" name="exames" onsubmit="vazios();" method="post" autocomplete="off">
             <input type="text" name="exame" placeholder="Nome do exame realizado" required>
             <input type="number" name="n_exame" placeholder="Insira o número do exame" required>
             <input type="date" name="dataexam" required><br>
